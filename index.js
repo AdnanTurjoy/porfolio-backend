@@ -34,7 +34,7 @@ app.use(cors());
 // });
 app.use("/api", projectRoute);
 
-app.listen(process.env.PORT || 8000, async () => {
+app.listen(process.env.PORT || 8000,  () => {
   console.log("Server is Running");
-  await connectDB();
+   connectDB();
 });
